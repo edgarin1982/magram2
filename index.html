@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="/img/logomagram.jpeg" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./index.css">
@@ -25,7 +24,7 @@
     </header>
     <section class="container-portada">
         <p class="portada-testimonio">
-            <strong>MAGRAM </strong>, profesionales comprometidos con tu negocio para hacerlo crecer, capacitados para las exigencias de hoy.
+            <strong>MAGRAM</strong> profesionales comprometidos con tu negocio para hacerlo crecer, capacitados para las exigencias de hoy.
         </p>
         <button class="btn">Contactanos</button>
 
@@ -51,7 +50,7 @@
 
     <section class="servicios">
         <div class="contenedor">
-            <h1>Servicios</h1>
+            <h1 class="titulo">Servicios</h1>
             <p>
                 Hola a continuación les damos una breve explicación acerca de los servicios que proporcionamos, para que sea más claro.
             </p>
@@ -119,8 +118,55 @@
             </div>
         </div>
  
-    </section>   
+    </section>  
+    <section class="carrusel">
+        <div class="atras">
+            <img id="atras" class="atras" src="./img/atras.svg" alt="atras" loading="lazy">
+        </div>
+        <div class="imagenes">
+            <div class="img-carrusel" id="img">
+                <img class="img1" src="./img/chef.jpg" alt="chef"  loading="lazy">
+            </div>
+            <div id="texto" class="texto">
+                <h3>Proyecto 01</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et in aperiam fugiat blanditiis nam harum, excepturi temporibus, officiis cupiditate esse sit corrupti explicabo recusandae possimus dolor cum, sapiente quis praesentium.</p>
+            </div>
+        </div>
+        <div class="adelante" id="adelante">
+            <img class="adelante" src="./img/adelante.svg" alt="adelante" loading="lazy">
+        </div>
+    </section> 
+    <div class="puntos" id="puntos">.</div>
+
+    <section class="container">
+        <div class="formBx">
+            <form name="contact" method="POST" data-netlify="true">
+                <h2>Contactanos</h2>
+                <div class="inputBox">
+                    <input type="text" name="name" id="" required="required">
+                    <span>Nombre completo</span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="name" id="" required="required">
+                    <span>Direccion de email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required" name="message"></textarea>
+                    <span>Mensaje</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+
+            </form>
+        </div>
+        <div class="imgBx">
+            <img src="./img/girl.png" alt="">
+        </div>
+
+    </section>
 
     <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="./js/carrusel.js"></script>
 </body>
 </html>
